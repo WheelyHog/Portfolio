@@ -71,21 +71,48 @@ body {
   margin-top: 200px;
 }
 
+.greeting-text-wrapper{
+  margin-top: 30px;
+
+}
+
 .greeting-text {
   margin-bottom: 50px;
+  overflow: hidden;
   color: #98c379;
+  width: 15ch;
+  white-space: nowrap;
+  border-right: 2px solid #98c379;
+  animation: printed-text 2s steps(15),
+  flashin-border .75s step-start infinite;
 }
 
 .greeting-title {
   font-size: 70px;
+  line-height: 70px;
   font-family: 'Ubuntu', sans-serif;
   margin-bottom: 50px;
   color: #d18c49;
+  letter-spacing: normal;
+  transform: translateY(-800%);
+  animation: text 2s ease-out forwards;
+  animation-delay: 1s;
+  width: 100%;
 }
 
 .greeting-subtitle {
   font-size: 60px;
   margin-bottom: 30px;
+  animation: text 2s ease-out forwards;
+  animation-delay: 2s;
+  width: 100%;
+  text-wrap: none;
+  transform: translateX(-800%);
+  white-space: nowrap;
+}
+
+.greeting-titles{
+  overflow: hidden;
 }
 
 .greeting-description {
@@ -99,6 +126,44 @@ body {
 
 .greeting-btn {
   padding: 15px 20px;
+}
+/*--------------------animation------------------------*/
+
+@keyframes flashin-border {
+  0% {
+    border-color: #98c379;
+  }
+
+  50% {
+    border-color: transparent;
+  }
+
+  100% {
+    border-color: #98c379;
+  }
+}
+
+@keyframes printed-text {
+  from {
+    width: 0%;
+  }
+}
+
+@keyframes text {
+  0% {
+    transform: translateX(-800%);
+    letter-spacing: 25px;
+  }
+
+  75% {
+    letter-spacing: 25px;
+  }
+
+
+  100% {
+    transform: translateX(0);
+    letter-spacing: normal;
+  }
 }
 
 /* ========================= about ====================== */
@@ -209,7 +274,6 @@ body {
   display: flex;
   gap: 50px;
   color: #7b818d;
-  /* font-weight: 700; */
 }
 
 .work-places {
@@ -220,7 +284,7 @@ body {
   font-size: 16px;
   font-weight: 700;
   color: #7b818d;
-  padding: 15px 20px;
+  padding: 20px 20px;
   border-left: 3px solid #2c313c;
   cursor: pointer;
   transition: all .5s;
@@ -253,6 +317,10 @@ body {
 .description-item {
   margin-top: 20px;
   display: flex;
+}
+
+.description-title{
+  color: #98c379;
 }
 
 .item-marker i {
@@ -367,6 +435,7 @@ body {
 /* ============================ other ============================ */
 #other {
   margin-top: 300px;
+  margin-bottom: 50px;
 }
 
 .other-title {
