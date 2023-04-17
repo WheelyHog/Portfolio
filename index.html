@@ -6,15 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
     <link rel="stylesheet"
           href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        wow = new WOW(
+            {
+                boxClass:     'wow',      // default
+                animateClass: 'animated', // change this if you are not using animate.css
+                offset:       0,          // default
+                mobile:       true,       // keep it on mobile
+                live:         true        // track if element updates
+            }
+        )
+        wow.init();
+    </script>
 </head>
 
 <body>
-<header class="header">
+<header class="header wow fadeInDown">
     <div class="logo">
-        <img src="images/hog logo.svg" alt="">
+        <a href="#"><img src="images/hog logo.svg" alt=""></a>
     </div>
     <ul class="menu">
         <li class="menu-item"><a href="#about"><span>01.</span>About</a></li>
@@ -44,7 +58,7 @@
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="wow flipInX">
         <div class="container">
             <h2 class="about-title">About Me</h2>
             <div class="about-inner">
@@ -74,7 +88,7 @@
                             <ul>
                                 <li><i class="lab la-joomla"></i> Joomla!</li>
                                 <li><i class="lab la-wordpress"></i> Wordpress</li>
-<!--                                <li><i class="lab la-node-js"></i> Node.JS</li>-->
+                                <!--                                <li><i class="lab la-node-js"></i> Node.JS</li>-->
                                 <li><i class="lab la-bootstrap"></i> Bootstrap</li>
                                 <li><i class="las la-code"></i> jQuery</li>
                             </ul>
@@ -83,7 +97,8 @@
                 </div>
                 <div class="avatar">
                     <div class="avatar-bg">
-                        <img src="./images/oggy_b.png" alt="oggy" id="avatar-img" onmouseover="changeToColor()" onmouseleave="changeToBlack()">
+                        <img src="./images/oggy_b.png" alt="oggy" id="avatar-img" onmouseover="changeToColor()"
+                             onmouseleave="changeToBlack()">
                     </div>
                 </div>
             </div>
@@ -91,7 +106,7 @@
 
     </section>
 
-    <section id="work">
+    <section id="work" class="wow zoomIn">
         <div class="container">
             <h2 class="work-title">Where I’ve Worked</h2>
             <div class="work-inner">
@@ -131,16 +146,16 @@
 
     <section id="projects">
         <div class="container">
-            <h2 class="projects-title">Some Web-Templates I've built</h2>
+            <h2 class="projects-title wow zoomIn">Some Web-Templates I've built</h2>
             <div class="project-inner">
 
                 <div class="project-item item-left">
-                    <div class="project-img">
+                    <div class="project-img wow slideInRight">
                         <a href="https://wheelyhog.github.io/Telran_FE_Project/">
                             <img src="images/temp6.png" alt="template" class="project-template">
                         </a>
                     </div>
-                    <div class="project-description">
+                    <div class="project-description wow slideInLeft">
                         <h4 class="project-subtitle">Featured Project</h4>
                         <h3 class="project-title">Page layout with special equipment rental services</h3>
                         <p class="project-text">Layout of a complex layout with numerous sliders, tabs, modals and
@@ -163,7 +178,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-item item-right">
+                <div class="project-item item-right wow slideInUp">
                     <div class="project-img">
                         <a href="https://wheelyhog.github.io/Hydro-shop/">
                             <img src="images/temp1.PNG" alt="template" class="project-template">
@@ -195,12 +210,12 @@
                 </div>
 
                 <div class="project-item item-left">
-                    <div class="project-img">
+                    <div class="project-img wow slideInLeft">
                         <a href="https://wheelyhog.github.io/Lamba/">
                             <img src="images/temp2.PNG" alt="template" class="project-template">
                         </a>
                     </div>
-                    <div class="project-description">
+                    <div class="project-description wow slideInRight">
                         <h4 class="project-subtitle">Featured Project</h4>
                         <h3 class="project-title">News web portal about events in sports car racing.</h3>
                         <p class="project-text">Layout with non-standard arrangement of elements</p>
@@ -221,7 +236,7 @@
                     </div>
                 </div>
 
-                <div class="project-item item-right">
+                <div class="project-item item-right wow slideInUp">
                     <div class="project-img">
                         <a href="https://wheelyhog.github.io/Mavic/">
                             <img src="images/temp3.PNG" alt="template" class="project-template">
@@ -250,7 +265,7 @@
                     </div>
                 </div>
 
-                <div class="project-item item-left">
+                <div class="project-item item-left wow zoomIn">
                     <div class="project-img">
                         <a href="https://wheelyhog.github.io/Hotel/">
                             <img src="images/temp4.PNG" alt="template" class="project-template">
@@ -279,12 +294,12 @@
                 </div>
 
                 <div class="project-item item-right">
-                    <div class="project-img">
+                    <div class="project-img wow slideInLeft">
                         <a href="https://wheelyhog.github.io/Leader/">
                             <img src="images/temp5.png" alt="template" class="project-template">
                         </a>
                     </div>
-                    <div class="project-description">
+                    <div class="project-description wow slideInRight">
                         <h4 class="project-subtitle">Featured Project</h4>
                         <h3 class="project-title">Web page layout for investors and opening a brokerage account</h3>
                         <p class="project-text">Application and consolidation of layout skills</p>
@@ -304,7 +319,7 @@
                     </div>
                 </div>
 
-                <div class="project-item item-left">
+                <div class="project-item item-left wow zoomIn">
                     <div class="project-img">
                         <a href="http://pkti.if.ua/index.php/en/">
                             <img src="images/temp7.png" alt="template" class="project-template">
@@ -335,12 +350,12 @@
                 </div>
 
                 <div class="project-item item-right">
-                    <div class="project-img">
+                    <div class="project-img wow slideInUp">
                         <a href="https://3d-figurki.com.pl/pl/">
                             <img src="images/temp8.png" alt="template" class="project-template">
                         </a>
                     </div>
-                    <div class="project-description">
+                    <div class="project-description wow slideInDown">
                         <h4 class="project-subtitle">Featured Project</h4>
                         <h3 class="project-title">Online store selling plaster figurines for coloring (children's
                             toys)</h3>
@@ -373,7 +388,7 @@
             <h2 class="other-title">CSS Features and Some Interesting Solutions</h2>
             <div class="other-inner">
 
-                <div class="other-item">
+                <div class="other-item wow slideInLeft">
                     <a href="https://codepen.io/WheelyHog/pen/wvEVaWV" class="other-link">
                         <div class="other-top">
                             <i class="las la-paw"></i>
@@ -393,7 +408,7 @@
 
                 </div>
 
-                <div class="other-item">
+                <div class="other-item wow slideInDown">
                     <a href="https://codepen.io/web-tiki/pen/ZYmZoV" class="other-link">
                         <div class="other-top">
                             <i class="las la-paw"></i>
@@ -412,7 +427,7 @@
                     </a>
                 </div>
 
-                <div class="other-item">
+                <div class="other-item wow slideInRight">
                     <a href="https://codepen.io/VisionLine/pen/DQXVbW">
                         <div class="other-top">
                             <i class="las la-paw"></i>
@@ -431,7 +446,7 @@
                     </a>
                 </div>
 
-                <div class="other-item">
+                <div class="other-item wow slideInLeft">
                     <a href="https://codepen.io/fluxus/pen/rweVgp">
                         <div class="other-top">
                             <i class="las la-paw"></i>
@@ -450,7 +465,7 @@
                     </a>
                 </div>
 
-                <div class="other-item">
+                <div class="other-item wow slideInUp">
                     <a href="https://codepen.io/pasaribu/pen/JXrjXK">
                         <div class="other-top">
                             <i class="las la-paw"></i>
@@ -471,7 +486,7 @@
 
                 </div>
 
-                <div class="other-item">
+                <div class="other-item wow slideInRight">
                     <a href="https://codepen.io/zadvorsky/pen/abaeOK">
                         <div class="other-top">
                             <i class="las la-paw"></i>
@@ -513,7 +528,7 @@
     <div class="container">
         <div class="footer-inner">
             <a href="https://github.com/WheelyHog">Designed & Built by Sergii Gutsuliak</a>
-            <img src="./images/hog%20logo.svg" alt="logo-small">
+            <a href="#"><img src="./images/hog%20logo.svg" alt="logo-small"></a>
         </div>
     </div>
 </footer>
@@ -532,6 +547,7 @@
         <li class="bg-menu-item"><a href="mailto: wheelyhog@gmail.com"><i class="las la-at"></i></a></li>
     </ul>
 </div>
+
 
 <script src="js/index.js"></script>
 </body>
