@@ -3,537 +3,599 @@
 /* font-family: 'Ubuntu', sans-serif; */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  position: relative;
-  background-color: #23272e;
-  font-family: 'Anonymous Pro', monospace;
-  color: #abb2bf;
-  font-size: 18px;
-  line-height: 120%;
+    position: relative;
+    background-color: #23272e;
+    font-family: 'Anonymous Pro', monospace;
+    color: #abb2bf;
+    font-size: 18px;
+    line-height: 120%;
 }
 
 .container {
-  max-width: 1000px;
-  margin: 0 auto;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.accent-btn {
+    background-color: transparent;
+    color: #98c379;
+    border: 1px solid #98c379;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.accent-btn:hover {
+    background-color: rgba(152, 195, 121, .1);
 }
 
 /* ================= heaader =================== */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 40px;
-}
-
-.accent-btn {
-  background-color: transparent;
-  color: #98c379;
-  border: 1px solid #98c379;
-  padding: 8px 15px;
-  border-radius: 5px;
-  font-family: 'Anonymous Pro', monospace;
-  font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 40px;
 }
 
 .logo img {
-  width: 70px;
-  height: 70px;
+    width: 70px;
+    height: 70px;
 }
 
 .menu {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-  align-items: center;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
 }
 
 .menu-item a {
-  text-decoration: none;
-  color: #abb2bf;
-  transition: all .5s;
+    text-decoration: none;
+    color: #abb2bf;
+    transition: all .5s;
 }
 
 .menu-item a:hover {
-  color: #98c379;
+    color: #98c379;
 }
 
 .menu-item span {
-  color: #98c379;
+    color: #98c379;
 }
 
 /* ==================== greeting =================== */
 .greeting {
-  margin-top: 200px;
+    margin-top: 200px;
 }
 
-.greeting-text-wrapper{
-  margin-top: 30px;
+.greeting-text-wrapper {
+    margin-top: 30px;
 
 }
 
 .greeting-text {
-  margin-bottom: 50px;
-  overflow: hidden;
-  color: #98c379;
-  width: 15ch;
-  white-space: nowrap;
-  border-right: 2px solid #98c379;
-  animation: printed-text 2s steps(15),
-  flashin-border .75s step-start infinite;
+    margin-bottom: 50px;
+    overflow: hidden;
+    color: #98c379;
+    width: 15ch;
+    white-space: nowrap;
+    border-right: 2px solid #98c379;
+    animation: printed-text 2s steps(15),
+    flashin-border .75s step-start infinite;
 }
 
 .greeting-title {
-  font-size: 70px;
-  line-height: 70px;
-  font-family: 'Ubuntu', sans-serif;
-  margin-bottom: 50px;
-  color: #d18c49;
-  letter-spacing: normal;
-  transform: translateY(-800%);
-  animation: text 2s ease-out forwards;
-  animation-delay: 1s;
-  width: 100%;
+    font-size: 70px;
+    line-height: 70px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 50px;
+    color: #d18c49;
+    letter-spacing: normal;
+    transform: translateY(-800%);
+    animation: text 2s ease-out forwards;
+    animation-delay: 1s;
+    width: 100%;
 }
 
 .greeting-subtitle {
-  font-size: 60px;
-  margin-bottom: 30px;
-  animation: text 2s ease-out forwards;
-  animation-delay: 2s;
-  width: 100%;
-  text-wrap: none;
-  transform: translateX(-800%);
-  white-space: nowrap;
+    font-size: 60px;
+    margin-bottom: 30px;
+    animation: text 2s ease-out forwards;
+    animation-delay: 2s;
+    width: 100%;
+    text-wrap: none;
+    transform: translateX(-800%);
+    white-space: nowrap;
 }
 
-.greeting-titles{
-  overflow: hidden;
+.greeting-titles {
+    overflow: hidden;
 }
 
 .greeting-description {
-  max-width: 560px;
-  margin-bottom: 30px;
+    max-width: 560px;
+    margin-bottom: 30px;
 }
 
 .greeting-description span {
-  color: #d46c6a;
+    color: #d46c6a;
 }
 
 .greeting-btn {
-  padding: 15px 20px;
+    padding: 15px 20px;
 }
+
 /*--------------------animation------------------------*/
 
 @keyframes flashin-border {
-  0% {
-    border-color: #98c379;
-  }
+    0% {
+        border-color: #98c379;
+    }
 
-  50% {
-    border-color: transparent;
-  }
+    50% {
+        border-color: transparent;
+    }
 
-  100% {
-    border-color: #98c379;
-  }
+    100% {
+        border-color: #98c379;
+    }
 }
 
 @keyframes printed-text {
-  from {
-    width: 0%;
-  }
+    from {
+        width: 0;
+    }
 }
 
 @keyframes text {
-  0% {
-    transform: translateX(-800%);
-    letter-spacing: 25px;
-  }
+    0% {
+        transform: translateX(-800%);
+        letter-spacing: 25px;
+    }
 
-  75% {
-    letter-spacing: 25px;
-  }
+    75% {
+        letter-spacing: 25px;
+    }
 
 
-  100% {
-    transform: translateX(0);
-    letter-spacing: normal;
-  }
+    100% {
+        transform: translateX(0);
+        letter-spacing: normal;
+    }
 }
 
 /* ========================= about ====================== */
 #about {
-  margin-top: 300px;
+    margin-top: 300px;
 }
 
 .about-title {
-  font-size: 26px;
-  display: flex;
-  margin-bottom: 50px;
-  font-family: 'Ubuntu', sans-serif;
+    font-size: 26px;
+    display: flex;
+    margin-bottom: 50px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .about-title:before {
-  content: '01.';
-  position: relative;
-  font-size: 20px;
-  color: #98c379;
-  margin-right: 10px;
-  font-family: 'Anonymous Pro', monospace;
+    content: '01.';
+    position: relative;
+    font-size: 20px;
+    color: #98c379;
+    margin-right: 10px;
+    font-family: 'Anonymous Pro', monospace;
 }
 
 .about-title:after {
-  content: "";
-  display: block;
-  position: relative;
-  top: 12px;
-  width: 300px;
-  height: 1px;
-  margin-left: 20px;
-  background-color: #2c313c;
+    content: "";
+    display: block;
+    position: relative;
+    top: 12px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #2c313c;
 }
 
 .about-inner {
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
 }
 
 .about-article {
-  max-width: 600px;
+    max-width: 600px;
 }
 
 .about-article-text {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .avatar {
-  background-image: url("../images/oggy_b.png");
-  width: 300px;
-  height: 302px;
-  transition: all .8s;
+    background-image: url("../images/oggy_b.png");
+    width: 300px;
+    height: 302px;
+    transition: all .8s;
 }
 
 .avatar:hover {
-  background-image: url("../images/oggy.png");
+    background-image: url("../images/oggy.png");
 }
 
 .about-skills {
-  display: flex;
-  gap: 100px;
+    display: flex;
+    gap: 100px;
 }
 
 .l-skills ul,
 .r-skills ul {
-  list-style: none;
+    list-style: none;
 }
 
-.lab {
-  color: #98c379;
+.lab, .las {
+    color: #98c379;
 }
 
 /* ======================== work ===================' */
 #work {
-  margin: 300px auto;
-  min-height: 400px;
+    margin: 300px auto;
+    min-height: 400px;
 }
 
 .work-title {
-  font-size: 26px;
-  display: flex;
-  margin-bottom: 50px;
-  font-family: 'Ubuntu', sans-serif;
+    font-size: 26px;
+    display: flex;
+    margin-bottom: 50px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .work-title:before {
-  content: '02.';
-  position: relative;
-  font-size: 20px;
-  color: #98c379;
-  margin-right: 10px;
-  font-family: 'Anonymous Pro', monospace;
+    content: '02.';
+    position: relative;
+    font-size: 20px;
+    color: #98c379;
+    margin-right: 10px;
+    font-family: 'Anonymous Pro', monospace;
 }
 
 .work-title:after {
-  content: "";
-  display: block;
-  position: relative;
-  top: 12px;
-  width: 300px;
-  height: 1px;
-  margin-left: 20px;
-  background-color: #2c313c;
+    content: "";
+    display: block;
+    position: relative;
+    top: 12px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #2c313c;
 }
 
 .work-inner {
-  display: flex;
-  gap: 50px;
-  color: #7b818d;
+    display: flex;
+    gap: 50px;
+    color: #7b818d;
 }
 
 .work-places {
-  min-width: 120px;
+    min-width: 120px;
 }
 
 .work-item {
-  font-size: 16px;
-  font-weight: 700;
-  color: #7b818d;
-  padding: 20px 20px;
-  border-left: 3px solid #2c313c;
-  cursor: pointer;
-  transition: all .5s;
+    font-size: 16px;
+    font-weight: 700;
+    color: #7b818d;
+    padding: 20px 20px;
+    border-left: 3px solid #2c313c;
+    cursor: pointer;
+    transition: all .5s;
 }
 
 .work-item:hover {
-  background-color: #2c313c;
-  color: #98c379;
+    background-color: #2c313c;
+    color: #98c379;
 }
 
 .work-active {
-  border-left: 3px solid #98c379;
-  background-color: #2c313c;
-  color: #98c379;
+    border-left: 3px solid #98c379;
+    background-color: #2c313c;
+    color: #98c379;
 }
 
 .description-item {
-  max-width: 700px;
+    max-width: 700px;
 }
 
 .period {
-  margin-top: 10px;
-  font-size: 14px;
+    margin-top: 10px;
+    font-size: 14px;
 }
 
 .work-description {
-  font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .description-item {
-  margin-top: 20px;
-  display: flex;
+    margin-top: 20px;
+    display: flex;
 }
 
-.description-title{
-  color: #98c379;
+.description-title {
+    color: #98c379;
 }
 
 .item-marker i {
-  color: #98c379;
-  margin-right: 20px;
+    color: #98c379;
+    margin-right: 20px;
 }
 
 /* ========================== projects ============================ */
 #projects {
-  margin-top: 300px;
+    margin-top: 300px;
 }
 
 .projects-title {
-  font-size: 26px;
-  display: flex;
-  margin-bottom: 50px;
-  font-family: 'Ubuntu', sans-serif;
+    font-size: 26px;
+    display: flex;
+    margin-bottom: 50px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .projects-title:before {
-  content: '03.';
-  position: relative;
-  font-size: 20px;
-  color: #98c379;
-  margin-right: 10px;
-  font-family: 'Anonymous Pro', monospace;
+    content: '03.';
+    position: relative;
+    font-size: 20px;
+    color: #98c379;
+    margin-right: 10px;
+    font-family: 'Anonymous Pro', monospace;
 }
 
 .projects-title:after {
-  content: "";
-  display: block;
-  position: relative;
-  top: 12px;
-  width: 300px;
-  height: 1px;
-  margin-left: 20px;
-  background-color: #2c313c;
+    content: "";
+    display: block;
+    position: relative;
+    top: 12px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #2c313c;
 }
 
 .project-item {
-  display: flex;
-  gap: 50px;
-  margin-bottom: 100px;
+    display: flex;
+    gap: 50px;
+    margin-bottom: 100px;
 }
 
-.project-item.item-left>.project-img {
-  order: 2;
+.project-item.item-left > .project-img {
+    order: 2;
 }
 
-.project-item.item-left>.project-description {
-  text-align: left;
+.project-item.item-left > .project-description {
+    text-align: left;
 }
 
-.project-item.item-left>.project-description>.project-tools>.tools-list {
-  justify-content: flex-start;
+.project-item.item-left > .project-description > .project-tools > .tools-list {
+    justify-content: flex-start;
 }
 
 .project-description {
-  text-align: right;
+    text-align: right;
 }
 
 .project-subtitle {
-  color: #98c379;
-  font-weight: 400;
+    color: #98c379;
+    font-weight: 400;
 }
 
 .project-title {
-  font-family: 'Ubuntu', sans-serif;
-  margin: 10px 0 20px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px 0 20px;
 }
 
 .project-template {
-  opacity: .3;
-  transition: all .7s;
-  border-radius: 5px;
-  box-shadow: rgba(255, 255, 255, 0.4) 0px 7px 29px 0px;
+    opacity: .3;
+    transition: all .7s;
+    border-radius: 5px;
+    box-shadow: rgba(255, 255, 255, 0.4) 0 7px 29px 0;
 }
 
 .project-template:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 .project-text {
-  background-color: #15181b;
-  padding: 20px;
-  border-radius: 5px;
+    background-color: #15181b;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .tools-list {
-  list-style: none;
-  margin-top: 20px;
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
 }
 
 .tools-item {
-  color: #d18c49;
+    color: #d18c49;
 }
 
 .project-link i {
-  margin-top: 20px;
-  font-size: 36px;
-  color: #7b818d;
-  transition: all .5s;
+    margin-top: 20px;
+    font-size: 36px;
+    color: #7b818d;
+    transition: all .5s;
 }
 
 .project-link i:hover {
-  color: #98c379;
+    color: #98c379;
 }
 
 /* ============================ other ============================ */
 #other {
-  margin-top: 300px;
-  margin-bottom: 50px;
+    margin-top: 300px;
+    margin-bottom: 50px;
 }
 
 .other-title {
-  font-family: 'Ubuntu', sans-serif;
-  margin-bottom: 50px;
-  text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .other-inner {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
 
 .other-item {
-  background-color: #15181b;
-  padding: 20px;
-  border-radius: 5px;
-  transition: all .5s;
-}
-
-.other-item:hover>h3 {
-  color: #98c379;
+    background-color: #15181b;
+    padding: 20px;
+    border-radius: 5px;
+    transition: all .5s;
+    cursor: pointer;
+    height: 360px;
 }
 
 .other-item:hover {
-  margin-top: -10px;
+    color: #98c379;
+    transform: scale(1.05);
 }
 
 .other-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.other-top i {
+    transition: all .5s;
+}
+
+.other-top:hover i {
+    color: #98c379;
 }
 
 .other-text {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .other-tools {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  color: #7b818d;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: #7b818d;
 }
 
 .la-paw {
-  font-size: 50px;
-  color: #98c379;
+    font-size: 50px;
+    color: #98c379;
 }
 
 .other-link .la-external-link-alt {
-  font-size: 36px;
-  text-decoration: none;
-  color: #7b818d;
+    font-size: 36px;
+    text-decoration: none;
+    color: #7b818d;
 }
 
 .other-title {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
+/*========================== contact =========================*/
+#contact {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.contact-title {
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 50px;
+}
+
+.contact-subtitle {
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 50px;
+    font-size: 60px;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+/*=========================== footer ===========================*/
+#footer {
+    margin: 300px 0 20px;
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.footer-inner a {
+    font-size: 16px;
+    color: #98c379;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer-inner img {
+    width: 40px;
+}
 
 
 /* ======================= bg menu =========================== */
 .bg-menu {
-  position: fixed;
-  /* margin-left: 50px; */
-  left: 20px;
-  bottom: 0;
+    position: fixed;
+    /* margin-left: 50px; */
+    left: 20px;
+    bottom: 0;
 }
 
 .bg-menu-list {
-  list-style: none;
-  position: relative;
-  margin-bottom: 100px;
+    list-style: none;
+    position: relative;
+    margin-bottom: 100px;
 }
 
 .bg-menu-list::after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 1px;
-  height: 90px;
-  margin: 0px auto;
-  background-color: #abb2bf;
-  left: 15px;
-  bottom: -100px;
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: #abb2bf;
+    left: 15px;
+    bottom: -100px;
 
 }
 
 .bg-menu-item a i {
-  font-size: 30px;
-  color: #abb2bf;
-  margin-bottom: 10px;
-  transition: all .5s;
+    font-size: 30px;
+    color: #abb2bf;
+    margin-bottom: 10px;
+    transition: all .5s;
 }
 
 .bg-menu-item a i:hover {
-  color: #98c379;
-  transform: translateY(-5px);
+    color: #98c379;
+    transform: translateY(-5px);
 }
