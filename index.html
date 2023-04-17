@@ -20,7 +20,7 @@
         <li class="menu-item"><a href="#about"><span>01.</span>About</a></li>
         <li class="menu-item"><a href="#work"><span>02.</span>Experience</a></li>
         <li class="menu-item"><a href="#projects"><span>03.</span>Work</a></li>
-        <li class="menu-item"><a href=""><span>04.</span>Contact</a></li>
+        <li class="menu-item"><a href="#contact"><span>04.</span>Contact</a></li>
         <li class="menu-item"><a href="./docs/cv.pdf">
             <button class="cv-show accent-btn">Resume</button>
         </a></li>
@@ -40,7 +40,7 @@
             <p class="greeting-description">Hello and welcome to my portfolio! I am a junior front-end developer. I have
                 a passion for creating beautiful and functional websites and I am constantly seeking to improve my
                 skills and knowledge. Currently, I’m studiing in <span>Tel-Ran.de GmbH</span>.</p>
-            <button class="greeting-btn accent-btn">Check out my Experience!</button>
+            <a class="greeting-btn accent-btn" href="#projects">Check out my Experience!</a>
         </div>
     </section>
 
@@ -74,7 +74,7 @@
                             <ul>
                                 <li><i class="lab la-joomla"></i> Joomla!</li>
                                 <li><i class="lab la-wordpress"></i> Wordpress</li>
-                                <li><i class="lab la-node-js"></i> Node.JS</li>
+<!--                                <li><i class="lab la-node-js"></i> Node.JS</li>-->
                                 <li><i class="lab la-bootstrap"></i> Bootstrap</li>
                                 <li><i class="las la-code"></i> jQuery</li>
                             </ul>
@@ -82,7 +82,9 @@
                     </div>
                 </div>
                 <div class="avatar">
-                    <div class="avatar-bg"></div>
+                    <div class="avatar-bg">
+                        <img src="./images/oggy_b.png" alt="oggy" id="avatar-img" onmouseover="changeToColor()" onmouseleave="changeToBlack()">
+                    </div>
                 </div>
             </div>
         </div>

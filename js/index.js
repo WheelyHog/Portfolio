@@ -76,3 +76,12 @@ for (let i = 0; i < workItemList.length; i++) {
 
     })
 }
+// =========================== avatar ====================
+const  avatar = document.getElementById('avatar-img')
+const changeToColor =()=>{
+avatar.src = './images/oggy.png'
+}
+
+const changeToBlack =() =>{
+avatar.src = './images/oggy_b.png'
+}
