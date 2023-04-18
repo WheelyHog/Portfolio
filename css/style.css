@@ -295,6 +295,16 @@ body {
     }
 }
 
+@media (max-width: 460px) {
+    .about-skills{
+        gap: 20px;
+        font-size: 14px;
+    }
+    #avatar-img{
+        width: 100%;
+    }
+}
+
 /* ======================== work ===================' */
 #work {
     margin: 300px auto;
@@ -658,6 +668,9 @@ body {
 @media (max-width: 600px) {
     .other-inner{
         grid-template-columns: 1fr;
+    }
+    .other-text{
+        font-size: 12px;
     }
 }
 
