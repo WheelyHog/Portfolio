@@ -90,6 +90,9 @@ body {
     .menu{
         display: none;
     }
+    .logo img{
+        width: 40px;
+    }
 }
 
 /* ==================== greeting =================== */
@@ -669,9 +672,7 @@ body {
     .other-inner{
         grid-template-columns: 1fr;
     }
-    .other-text{
-        font-size: 12px;
-    }
+
 }
 
 /*========================== contact =========================*/
@@ -735,7 +736,11 @@ body {
     width: 40px;
     margin-top: 10px;
 }
-
+@media (max-width: 460px) {
+    .footer-inner a{
+        font-size: 12px;
+    }
+}
 
 /* ======================= bg menu =========================== */
 .bg-menu {
