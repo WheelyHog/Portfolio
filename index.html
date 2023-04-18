@@ -26,16 +26,16 @@
 </head>
 
 <body>
-<header class="header wow fadeInDown">
-    <div class="logo">
+<header class="header">
+    <div class="logo wow fadeInDown" data-wow-delay="0.3s">
         <a href="#"><img src="images/hog logo.svg" alt=""></a>
     </div>
     <ul class="menu">
-        <li class="menu-item"><a href="#about"><span>01.</span>About</a></li>
-        <li class="menu-item"><a href="#work"><span>02.</span>Experience</a></li>
-        <li class="menu-item"><a href="#projects"><span>03.</span>Work</a></li>
-        <li class="menu-item"><a href="#contact"><span>04.</span>Contact</a></li>
-        <li class="menu-item"><a href="./docs/cv.pdf">
+        <li class="menu-item wow fadeInDown" data-wow-delay="0.6s"><a href="#about"><span>01.</span>About</a></li>
+        <li class="menu-item wow fadeInDown" data-wow-delay="0.9s"><a href="#work"><span>02.</span>Experience</a></li>
+        <li class="menu-item wow fadeInDown" data-wow-delay="1.2s"><a href="#projects"><span>03.</span>Work</a></li>
+        <li class="menu-item wow fadeInDown" data-wow-delay="1.5s"><a href="#contact"><span>04.</span>Contact</a></li>
+        <li class="menu-item wow fadeInDown" data-wow-delay="1.8s"><a href="./docs/cv.pdf">
             <button class="cv-show accent-btn">Resume</button>
         </a></li>
     </ul>
@@ -48,17 +48,17 @@
                 <p class="greeting-text">Hi, my name is</p>
             </div>
             <div class="greeting-titles">
-                <h1 class="greeting-title">Sergii Gutsuliak.</h1>
-                <h2 class="greeting-subtitle">I'm a Web Developer</h2>
+                <h1 class="greeting-title wow slideInLeft" data-wow-delay="2s" data-wow-duration="1s">Sergii Gutsuliak.</h1>
+                <h2 class="greeting-subtitle wow slideInLeft" data-wow-delay="2.5s">I'm a Web Developer</h2>
             </div>
             <p class="greeting-description">Hello and welcome to my portfolio! I am a junior front-end developer. I have
-                a passion for creating beautiful and functional websites and I am constantly seeking to improve my
-                skills and knowledge. Currently, I’m studiing in <span>Tel-Ran.de GmbH</span>.</p>
+                a passion for creating beautiful and functional websites, and I am constantly seeking to improve my
+                skills and knowledge. Currently, I’m studiing in <a href="https://tel-ran.de/"><img src="images/telran_logo.png" alt="telran" class="telran"></a></p>
             <a class="greeting-btn accent-btn" href="#projects">Check out my Experience!</a>
         </div>
     </section>
 
-    <section id="about" class="wow flipInX">
+    <section id="about" class="wow slideInUp" data-wow-duration="2s">
         <div class="container">
             <h2 class="about-title">About Me</h2>
             <div class="about-inner">
@@ -526,6 +526,20 @@
 
 <footer id="footer">
     <div class="container">
+        <div class="bg-menu">
+            <ul class="bg-menu-list">
+                <li class="bg-menu-item"><a href="https://github.com/WheelyHog/"><i class="lab la-github"></i></a></li>
+                <li class="bg-menu-item"><a href="https://www.instagram.com/wheely_hog/"><i class="lab la-instagram"></i></a>
+                </li>
+                <li class="bg-menu-item"><a href="https://www.facebook.com/serg.grey.50"><i class="lab la-facebook"></i></a>
+                </li>
+                <li class="bg-menu-item"><a href="linkedin.com/in/sergii-gutsuliak-478103264"><i
+                        class="lab la-linkedin"></i></a>
+                </li>
+                <li class="bg-menu-item"><a href="https://codepen.io/WheelyHog"><i class="lab la-codepen"></i></a></li>
+                <li class="bg-menu-item"><a href="mailto: wheelyhog@gmail.com"><i class="las la-at"></i></a></li>
+            </ul>
+        </div>
         <div class="footer-inner">
             <a href="https://github.com/WheelyHog">Designed & Built by Sergii Gutsuliak</a>
             <a href="#"><img src="./images/hog%20logo.svg" alt="logo-small"></a>
@@ -533,20 +547,7 @@
     </div>
 </footer>
 
-<div class="bg-menu">
-    <ul class="bg-menu-list">
-        <li class="bg-menu-item"><a href="https://github.com/WheelyHog/"><i class="lab la-github"></i></a></li>
-        <li class="bg-menu-item"><a href="https://www.instagram.com/wheely_hog/"><i class="lab la-instagram"></i></a>
-        </li>
-        <li class="bg-menu-item"><a href="https://www.facebook.com/serg.grey.50"><i class="lab la-facebook"></i></a>
-        </li>
-        <li class="bg-menu-item"><a href="linkedin.com/in/sergii-gutsuliak-478103264"><i
-                class="lab la-linkedin"></i></a>
-        </li>
-        <li class="bg-menu-item"><a href="https://codepen.io/WheelyHog"><i class="lab la-codepen"></i></a></li>
-        <li class="bg-menu-item"><a href="mailto: wheelyhog@gmail.com"><i class="las la-at"></i></a></li>
-    </ul>
-</div>
+
 
 
 <script src="js/index.js"></script>

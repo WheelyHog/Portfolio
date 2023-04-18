@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap');
 
-/*:root {*/
-/*    --animate-duration: 2000ms;*/
-/*    --animate-delay: 10s;*/
-/*}*/
-
 html {
     scroll-behavior: smooth;
     overflow-y: scroll;
@@ -46,10 +41,14 @@ body {
 .accent-btn:hover {
     background-color: rgba(152, 195, 121, .1);
 }
-/*section{*/
-/*    min-height: 100vh;*/
-/*}*/
-/* ================= heaader =================== */
+
+@media (max-width: 1180px) {
+    .container {
+        padding: 0 70px;
+    }
+}
+
+/* ================= header =================== */
 .header {
     display: flex;
     justify-content: space-between;
@@ -115,22 +114,13 @@ body {
     font-family: 'Ubuntu', sans-serif;
     margin-bottom: 50px;
     color: #d18c49;
-    letter-spacing: normal;
-    transform: translateY(-800%);
-    animation: text 2s ease-out forwards;
-    animation-delay: 1s;
-    width: 100%;
+
 }
 
 .greeting-subtitle {
     font-size: 60px;
     margin-bottom: 30px;
-    animation: text 2s ease-out forwards;
-    animation-delay: 2s;
-    width: 100%;
-    text-wrap: none;
-    transform: translateX(-800%);
-    white-space: nowrap;
+
 }
 
 .greeting-titles {
@@ -142,13 +132,30 @@ body {
     margin-bottom: 30px;
 }
 
-.greeting-description span {
-    color: #d46c6a;
+.greeting-description a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 8px 0 -5px;
+}
+
+.telran {
+    height: 24px;
 }
 
 .greeting-btn {
+    display: inline-block;
     padding: 15px 20px;
     text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .greeting-title {
+        font-size: 54px;
+    }
+
+    .greeting-subtitle {
+        font-size: 36px;
+    }
 }
 
 /*--------------------animation------------------------*/
@@ -173,22 +180,22 @@ body {
     }
 }
 
-@keyframes text {
-    0% {
-        transform: translateX(-800%);
-        letter-spacing: 25px;
-    }
+/*@keyframes text {*/
+/*    0% {*/
+/*        transform: translateX(-800%);*/
+/*        letter-spacing: 25px;*/
+/*    }*/
 
-    75% {
-        letter-spacing: 25px;
-    }
+/*    75% {*/
+/*        letter-spacing: 25px;*/
+/*    }*/
 
 
-    100% {
-        transform: translateX(0);
-        letter-spacing: normal;
-    }
-}
+/*    100% {*/
+/*        transform: translateX(0);*/
+/*        letter-spacing: normal;*/
+/*    }*/
+/*}*/
 
 /* ========================= about ====================== */
 #about {
@@ -236,7 +243,7 @@ body {
     margin-bottom: 20px;
 }
 
-#avatar-img{
+#avatar-img {
     transition: all .8s;
 }
 
@@ -253,14 +260,22 @@ body {
 .lab, .las {
     color: #98c379;
 }
+
 @media (max-width: 1024px) {
-    .about-inner{
+
+    .about-inner {
         flex-direction: column;
     }
-    .avatar-bg{
+
+    .about-article {
+        margin: 0 auto;
+    }
+
+    .avatar-bg {
         text-align: center;
     }
 }
+
 /* ======================== work ===================' */
 #work {
     margin: 300px auto;
@@ -404,6 +419,7 @@ body {
 
 .project-description {
     text-align: right;
+    width: 100%;
 }
 
 .project-subtitle {
@@ -456,6 +472,49 @@ body {
     color: #98c379;
 }
 
+@media (max-width: 1024px) {
+    .project-item {
+        gap: 20px;
+    }
+
+    .tools-item {
+        font-size: 14px;
+    }
+}
+@media (max-width: 900px) {
+    .project-item{
+        position: relative;
+        overflow: hidden;
+    }
+    .project-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: .1;
+        z-index: 0;
+    }
+    .project-template{
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: .3;
+    }
+    .project-template:hover{
+        opacity: .3;
+    }
+    .project-description{
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .project-text{
+        opacity: 1;
+    }
+
+}
+
 /* ============================ other ============================ */
 #other {
     margin-top: 300px;
@@ -464,7 +523,7 @@ body {
 
 .other-title {
     font-family: 'Ubuntu', sans-serif;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -526,6 +585,22 @@ body {
 
 .other-title {
     margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+    .other-text,
+    .other-tools {
+        font-size: 14px;
+    }
+
+    .other-title {
+        font-size: 18px;
+    }
+
+    .other-inner{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 /*========================== contact =========================*/
@@ -618,4 +693,19 @@ body {
 .bg-menu-item a i:hover {
     color: #98c379;
     transform: translateY(-5px);
+}
+
+@media (max-width: 900px) {
+    .bg-menu {
+        position: static;
+    }
+    .bg-menu-list::after{
+        display: none;
+    }
+    .bg-menu-list{
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: center;
+        gap: 10px;
+    }
 }
