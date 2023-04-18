@@ -86,6 +86,11 @@ body {
 .menu-item span {
     color: #98c379;
 }
+@media (max-width: 900px) {
+    .menu{
+        display: none;
+    }
+}
 
 /* ==================== greeting =================== */
 .greeting {
@@ -275,6 +280,20 @@ body {
         text-align: center;
     }
 }
+@media (max-width: 600px) {
+    .about-title:after{
+        display: none;
+    }
+    .about-title{
+        font-size: 20px;
+    }
+    .about-article-text{
+        font-size: 14px;
+    }
+    .l-skills{
+        font-size: 14px;
+    }
+}
 
 /* ======================== work ===================' */
 #work {
@@ -365,6 +384,21 @@ body {
 .item-marker i {
     color: #98c379;
     margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+    .work-title:after{
+        display: none;
+    }
+    .work-title{
+        font-size: 20px;
+    }
+    .description-title{
+        font-size: 16px;
+    }
+    .item-string{
+        font-size: 14px;
+    }
 }
 
 /* ========================== projects ============================ */
@@ -512,7 +546,27 @@ body {
     .project-text{
         opacity: 1;
     }
+}
 
+@media (max-width: 600px) {
+    .projects-title:after{
+        display: none;
+    }
+    .projects-title{
+        font-size: 20px;
+    }
+    .project-description{
+        padding: 10px;
+    }
+    .project-title{
+        font-size: 16px;
+    }
+    .project-subtitle{
+        font-size: 14px;
+    }
+    .project-text{
+        font-size: 14px;
+    }
 }
 
 /* ============================ other ============================ */
@@ -600,7 +654,11 @@ body {
     .other-inner{
         grid-template-columns: repeat(2, 1fr);
     }
-
+}
+@media (max-width: 600px) {
+    .other-inner{
+        grid-template-columns: 1fr;
+    }
 }
 
 /*========================== contact =========================*/
@@ -629,7 +687,17 @@ body {
     margin-top: 30px;
     text-decoration: none;
 }
-
+@media (max-width: 600px) {
+    .contact-title{
+        font-size: 20px;
+    }
+    .contact-subtitle{
+        font-size: 36px;
+    }
+    .contact-text{
+        font-size: 14px;
+    }
+}
 /*=========================== footer ===========================*/
 #footer {
     margin: 300px 0 20px;
