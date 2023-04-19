@@ -77,24 +77,79 @@ for (let i = 0; i < workItemList.length; i++) {
     })
 }
 // =========================== avatar ====================
-const  avatar = document.getElementById('avatar-img')
-const changeToColor =()=>{
-avatar.src = './images/oggy.png'
+const avatar = document.getElementById('avatar-img')
+const changeToColor = () => {
+    avatar.src = './images/oggy.png'
 }
 
-const changeToBlack =() =>{
-avatar.src = './images/oggy_b.png'
+const changeToBlack = () => {
+    avatar.src = './images/oggy_b.png'
 }
 
 // ============================== wow =============================
 
 let wow = new WOW(
     {
-        boxClass:     'wow',      // default
+        boxClass: 'wow',      // default
         animateClass: 'animated', // change this if you are not using animate.css
-        offset:       0,          // default
-        mobile:       true,       // keep it on mobile
-        live:         true        // track if element updates
+        offset: 0,          // default
+        mobile: true,       // keep it on mobile
+        live: true        // track if element updates
     }
 )
 wow.init();
+
+// =========================== burger =============================
+const mobile_menu = document.querySelector('.burger')
+const top_line = document.querySelector('.l-top')
+const middle_line = document.querySelector('.l-middle')
+const bottom_line = document.querySelector('.l-bottom')
+const modal = document.querySelector('.modal')
+
+let mob_menu = false
+
+mobile_menu.onclick = () => {
+    mob_menu = !mob_menu;
+    console.log(mob_menu)
+    if (mob_menu) {
+        modal.style.display = 'block'
+        top_line.style.rotate = '45deg';
+        top_line.style.transform = 'translate(6px, 6px)';
+
+        middle_line.style.transform = 'rotate(45deg)';
+
+        bottom_line.style.rotate = '-45deg';
+        bottom_line.style.transform = 'translate(6px, -5px)';
+
+
+    } else {
+        console.log(mob_menu)
+        top_line.style.rotate = '0deg';
+        top_line.style.transform = 'translate(0, 0)';
+
+        middle_line.style.transform = 'rotate(0deg)';
+
+        bottom_line.style.rotate = '0deg';
+        bottom_line.style.transform = 'translate(0, 0)';
+
+        modal.style.display = 'none'
+
+    }
+}
+
+const mob_menu_list = document.querySelectorAll('.mobile_menu_item')
+
+for (let i = 0; i < mob_menu_list.length; i++) {
+    mob_menu_list[i].onclick = () => {
+        mob_menu = !mob_menu;
+        modal.style.display = 'none'
+
+        top_line.style.rotate = '0deg';
+        top_line.style.transform = 'translate(0, 0)';
+
+        middle_line.style.transform = 'rotate(0deg)';
+
+        bottom_line.style.rotate = '0deg';
+        bottom_line.style.transform = 'translate(0, 0)';
+    }
+}

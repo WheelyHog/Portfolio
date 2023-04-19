@@ -14,11 +14,11 @@
     <script>
         wow = new WOW(
             {
-                boxClass:     'wow',      // default
+                boxClass: 'wow',      // default
                 animateClass: 'animated', // change this if you are not using animate.css
-                offset:       0,          // default
-                mobile:       true,       // keep it on mobile
-                live:         true        // track if element updates
+                offset: 0,          // default
+                mobile: true,       // keep it on mobile
+                live: true        // track if element updates
             }
         )
         wow.init();
@@ -39,6 +39,20 @@
             <button class="cv-show accent-btn">Resume</button>
         </a></li>
     </ul>
+    <div class="burger mobile-menu">
+        <div class="line l-top"></div>
+        <div class="line l-middle"></div>
+        <div class="line l-bottom"></div>
+    </div>
+    <div class="modal">
+        <ul class="mobile_menu_list">
+            <li class="mobile_menu_item"><a href="#about">01. About</a></li>
+            <li class="mobile_menu_item"><a href="#work">02. Experience</a></li>
+            <li class="mobile_menu_item"><a href="#projects">03. Work</a></li>
+            <li class="mobile_menu_item"><a href="#contact">04. Contact</a></li>
+            <li class="mobile_menu_item accent-btn cv-btn"><a href="./docs/cv.pdf">Resume</a></li>
+        </ul>
+    </div>
 </header>
 
 <main>
@@ -48,12 +62,14 @@
                 <p class="greeting-text">Hi, my name is</p>
             </div>
             <div class="greeting-titles">
-                <h1 class="greeting-title wow slideInLeft" data-wow-delay="2s" data-wow-duration="1s">Sergii Gutsuliak.</h1>
+                <h1 class="greeting-title wow slideInLeft" data-wow-delay="2s" data-wow-duration="1s">Sergii
+                    Gutsuliak.</h1>
                 <h2 class="greeting-subtitle wow slideInLeft" data-wow-delay="2.5s">I'm a Web Developer</h2>
             </div>
             <p class="greeting-description">Hello and welcome to my portfolio! I am a junior front-end developer. I have
                 a passion for creating beautiful and functional websites, and I am constantly seeking to improve my
-                skills and knowledge. Currently, I’m studiing in <a href="https://tel-ran.de/"><img src="images/telran_logo.png" alt="telran" class="telran"></a></p>
+                skills and knowledge. Currently, I’m studiing in <a href="https://tel-ran.de/"><img
+                        src="images/telran_logo.png" alt="telran" class="telran"></a></p>
             <a class="greeting-btn accent-btn" href="#projects">Check out my Experience!</a>
         </div>
     </section>
@@ -529,7 +545,8 @@
         <div class="bg-menu">
             <ul class="bg-menu-list">
                 <li class="bg-menu-item"><a href="https://github.com/WheelyHog/"><i class="lab la-github"></i></a></li>
-                <li class="bg-menu-item"><a href="https://www.instagram.com/wheely_hog/"><i class="lab la-instagram"></i></a>
+                <li class="bg-menu-item"><a href="https://www.instagram.com/wheely_hog/"><i
+                        class="lab la-instagram"></i></a>
                 </li>
                 <li class="bg-menu-item"><a href="https://www.facebook.com/serg.grey.50"><i class="lab la-facebook"></i></a>
                 </li>
@@ -546,8 +563,6 @@
         </div>
     </div>
 </footer>
-
-
 
 
 <script src="js/index.js"></script>

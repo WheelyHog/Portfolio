@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap');
 
+:root {
+    --font-size: 1;
+/ / Scale is using font-size in rems;
+    --color1: #f0ffff;
+    --borderRadius: 1em;
+}
+
 html {
     scroll-behavior: smooth;
     overflow-y: scroll;
@@ -47,6 +54,7 @@ body {
         padding: 0 70px;
     }
 }
+
 @media (max-width: 600px) {
     .container {
         padding: 0 40px;
@@ -58,9 +66,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 40px;
+    margin: 0;
     background-color: #23272e;
-    padding: 10px;
+    padding: 20px 40px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -91,13 +99,72 @@ body {
 .menu-item span {
     color: #98c379;
 }
+
 @media (max-width: 900px) {
-    .menu{
+    .menu {
         display: none;
     }
-    .logo img{
+
+    .logo img {
         width: 40px;
     }
+}
+
+/*========================burger===================*/
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #98c379;
+    transition: all .5s;
+}
+
+@media (max-width: 900px) {
+    .burger {
+        display: flex;
+    }
+}
+
+/*============================== modal=======================*/
+.modal {
+    display: none;
+    position: absolute;
+    bottom: calc(110px - 100vh);
+    right: 0;
+    width: 100%;
+    background-color: #292e36;
+}
+
+.mobile_menu_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: calc(100vh - 110px);
+    padding: 30px;
+    align-items: center;
+}
+
+.mobile_menu_item {
+    text-align: center;
+}
+
+.mobile_menu_item a {
+    text-decoration: none;
+    color: #98c379;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.cv-btn {
+    max-width: 150px;
 }
 
 /* ==================== greeting =================== */
@@ -168,6 +235,25 @@ body {
 
     .greeting-subtitle {
         font-size: 36px;
+    }
+}
+
+@media (max-width: 500px) {
+    .greeting-title {
+        font-size: 30px;
+    }
+
+    .greeting-subtitle {
+        font-size: 20px;
+    }
+
+    .greeting-text {
+        font-size: 14px;
+    }
+
+    .greeting-text,
+    .greeting-title {
+        margin-bottom: 20px;
     }
 }
 
@@ -288,27 +374,32 @@ body {
         text-align: center;
     }
 }
+
 @media (max-width: 600px) {
-    .about-title:after{
+    .about-title:after {
         display: none;
     }
-    .about-title{
+
+    .about-title {
         font-size: 20px;
     }
-    .about-article-text{
+
+    .about-article-text {
         font-size: 14px;
     }
-    .l-skills{
+
+    .l-skills {
         font-size: 14px;
     }
 }
 
 @media (max-width: 460px) {
-    .about-skills{
+    .about-skills {
         gap: 20px;
         font-size: 14px;
     }
-    #avatar-img{
+
+    #avatar-img {
         width: 100%;
     }
 }
@@ -405,16 +496,19 @@ body {
 }
 
 @media (max-width: 600px) {
-    .work-title:after{
+    .work-title:after {
         display: none;
     }
-    .work-title{
+
+    .work-title {
         font-size: 20px;
     }
-    .description-title{
+
+    .description-title {
         font-size: 16px;
     }
-    .item-string{
+
+    .item-string {
         font-size: 14px;
     }
 }
@@ -533,12 +627,14 @@ body {
         font-size: 14px;
     }
 }
+
 @media (max-width: 900px) {
-    .project-item{
+    .project-item {
         position: relative;
         overflow: hidden;
     }
-    .project-img{
+
+    .project-img {
         position: absolute;
         top: 0;
         left: 0;
@@ -546,43 +642,52 @@ body {
         opacity: .1;
         z-index: 0;
     }
-    .project-template{
+
+    .project-template {
         width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         opacity: .3;
     }
-    .project-template:hover{
+
+    .project-template:hover {
         opacity: .3;
     }
-    .project-description{
+
+    .project-description {
         padding: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .project-text{
+
+    .project-text {
         opacity: 1;
     }
 }
 
 @media (max-width: 600px) {
-    .projects-title:after{
+    .projects-title:after {
         display: none;
     }
-    .projects-title{
+
+    .projects-title {
         font-size: 20px;
     }
-    .project-description{
+
+    .project-description {
         padding: 10px;
     }
-    .project-title{
+
+    .project-title {
         font-size: 16px;
     }
-    .project-subtitle{
+
+    .project-subtitle {
         font-size: 14px;
     }
-    .project-text{
+
+    .project-text {
         font-size: 14px;
     }
 }
@@ -669,15 +774,25 @@ body {
         font-size: 18px;
     }
 
-    .other-inner{
+    .other-inner {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media (max-width: 600px) {
-    .other-inner{
+    .other-inner {
         grid-template-columns: 1fr;
     }
 
+    .other-item {
+        height: auto;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .la-paw {
+        font-size: 36px;
+    }
 }
 
 /*========================== contact =========================*/
@@ -706,17 +821,21 @@ body {
     margin-top: 30px;
     text-decoration: none;
 }
+
 @media (max-width: 600px) {
-    .contact-title{
+    .contact-title {
         font-size: 20px;
     }
-    .contact-subtitle{
+
+    .contact-subtitle {
         font-size: 36px;
     }
-    .contact-text{
+
+    .contact-text {
         font-size: 14px;
     }
 }
+
 /*=========================== footer ===========================*/
 #footer {
     margin: 300px 0 20px;
@@ -741,8 +860,9 @@ body {
     width: 40px;
     margin-top: 10px;
 }
+
 @media (max-width: 460px) {
-    .footer-inner a{
+    .footer-inner a {
         font-size: 12px;
     }
 }
@@ -790,10 +910,12 @@ body {
     .bg-menu {
         position: static;
     }
-    .bg-menu-list::after{
+
+    .bg-menu-list::after {
         display: none;
     }
-    .bg-menu-list{
+
+    .bg-menu-list {
         display: flex;
         margin-bottom: 20px;
         justify-content: center;
