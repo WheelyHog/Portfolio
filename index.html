@@ -8,7 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
     <link rel="stylesheet"
-          href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
@@ -26,546 +27,566 @@
 </head>
 
 <body>
-<header class="header">
-    <div class="logo wow fadeInDown" data-wow-delay="0.3s">
-        <a href="#"><img src="images/hog logo.svg" alt=""></a>
-    </div>
-    <ul class="menu">
-        <li class="menu-item wow fadeInDown" data-wow-delay="0.6s"><a href="#about"><span>01.</span>About</a></li>
-        <li class="menu-item wow fadeInDown" data-wow-delay="0.9s"><a href="#work"><span>02.</span>Experience</a></li>
-        <li class="menu-item wow fadeInDown" data-wow-delay="1.2s"><a href="#projects"><span>03.</span>Work</a></li>
-        <li class="menu-item wow fadeInDown" data-wow-delay="1.5s"><a href="#contact"><span>04.</span>Contact</a></li>
-        <li class="menu-item wow fadeInDown" data-wow-delay="1.8s"><a href="./docs/cv.pdf">
-            <button class="cv-show accent-btn">Resume</button>
-        </a></li>
-    </ul>
-    <div class="burger mobile-menu">
-        <div class="line l-top"></div>
-        <div class="line l-middle"></div>
-        <div class="line l-bottom"></div>
-    </div>
-    <div class="modal">
-        <ul class="mobile_menu_list">
-            <li class="mobile_menu_item"><a href="#about">01. About</a></li>
-            <li class="mobile_menu_item"><a href="#work">02. Experience</a></li>
-            <li class="mobile_menu_item"><a href="#projects">03. Work</a></li>
-            <li class="mobile_menu_item"><a href="#contact">04. Contact</a></li>
-            <li class="mobile_menu_item accent-btn cv-btn"><a href="./docs/cv.pdf">Resume</a></li>
+    <header class="header">
+        <div class="logo wow fadeInDown" data-wow-delay="0.3s">
+            <a href="#"><img src="images/hog logo.svg" alt=""></a>
+        </div>
+        <ul class="menu">
+            <li class="menu-item wow fadeInDown" data-wow-delay="0.6s"><a href="#about"><span>01.</span>About</a></li>
+            <li class="menu-item wow fadeInDown" data-wow-delay="0.9s"><a href="#work"><span>02.</span>Experience</a>
+            </li>
+            <li class="menu-item wow fadeInDown" data-wow-delay="1.2s"><a href="#projects"><span>03.</span>Work</a></li>
+            <li class="menu-item wow fadeInDown" data-wow-delay="1.5s"><a href="#contact"><span>04.</span>Contact</a>
+            </li>
+            <li class="menu-item wow fadeInDown" data-wow-delay="1.8s"><a href="./docs/cv.pdf">
+                    <button class="cv-show accent-btn">Resume</button>
+                </a></li>
         </ul>
-    </div>
-</header>
-
-<main>
-    <section class="greeting">
-        <div class="container">
-            <div class="greeting-text-wrapper">
-                <p class="greeting-text">Hi, my name is</p>
-            </div>
-            <div class="greeting-titles">
-                <h1 class="greeting-title wow slideInLeft" data-wow-delay="2s" data-wow-duration="1s">Sergii
-                    Gutsuliak.</h1>
-                <h2 class="greeting-subtitle wow slideInLeft" data-wow-delay="2.5s">I'm a Web Developer</h2>
-            </div>
-            <p class="greeting-description">Hello and welcome to my portfolio! I am a junior front-end developer. I have
-                a passion for creating beautiful and functional websites, and I am constantly seeking to improve my
-                skills and knowledge. Currently, I’m studiing in <a href="https://tel-ran.de/"><img
-                        src="images/telran_logo.png" alt="telran" class="telran"></a></p>
-            <a class="greeting-btn accent-btn" href="#projects">Check out my Experience!</a>
+        <div class="burger mobile-menu">
+            <div class="line l-top"></div>
+            <div class="line l-middle"></div>
+            <div class="line l-bottom"></div>
         </div>
-    </section>
-
-    <section id="about" class="wow slideInUp" data-wow-duration="2s">
-        <div class="container">
-            <h2 class="about-title">About Me</h2>
-            <div class="about-inner">
-                <div class="about-article">
-                    <p class="about-article-text">In my projects, I strive to create intuitive and user-friendly
-                        interfaces that engage and delight users. I am proficient in HTML, CSS, JavaScript, and jQuery,
-                        and have experience working with React Javascript library</p>
-                    <p class="about-article-text">As a self-motivated and detail-oriented individual, I am committed to
-                        delivering high-quality work that meets the needs of my clients. I enjoy collaborating with
-                        others and am always eager to learn from more experienced developers.
-                    </p>
-                    <p class="about-article-text">Please take a look at my portfolio to see some examples of my work. I
-                        am excited about the opportunity to contribute my skills and creativity to your team and look
-                        forward to hearing from you.</p>
-                    <p class="about-article-text">Here are a few technologies I’ve been working with recently:</p>
-                    <div class="about-skills">
-                        <div class="l-skills">
-                            <ul>
-                                <li><i class="lab la-html5"></i> HTML</li>
-                                <li><i class="lab la-css3"></i> CSS</li>
-                                <li><i class="lab la-js"></i> Javascript</li>
-                                <li><i class="las la-database"></i> MySQL</li>
-                                <li><i class="las la-server"></i> MongoDB</li>
-                            </ul>
-                        </div>
-                        <div class="r-skills">
-                            <ul>
-                                <li><i class="lab la-joomla"></i> Joomla!</li>
-                                <li><i class="lab la-wordpress"></i> Wordpress</li>
-                                <!--                                <li><i class="lab la-node-js"></i> Node.JS</li>-->
-                                <li><i class="lab la-bootstrap"></i> Bootstrap</li>
-                                <li><i class="las la-code"></i> jQuery</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="avatar">
-                    <div class="avatar-bg">
-                        <img src="./images/oggy_b.png" alt="oggy" id="avatar-img" onmouseover="changeToColor()"
-                             onmouseleave="changeToBlack()">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="work" class="wow zoomIn">
-        <div class="container">
-            <h2 class="work-title">Where I’ve Worked</h2>
-            <div class="work-inner">
-                <div class="work-places">
-                    <div class="work-item work-active">Tel-Ran.de GmbH</div>
-                    <div class="work-item">Varta</div>
-                    <div class="work-item">Xerox</div>
-                    <div class="work-item">Sota</div>
-                </div>
-                <div class="work-description">
-                    <h4 class="description-title">Tel-Ran, Student in Frontend Web Developing</h4>
-                    <p class="period">2022 - Present</p>
-                    <div class="description-items">
-                        <div class="description-item">
-                            <div class="item-marker"><i class="las la-fast-forward"></i></div>
-                            <div class="item-string">Learning the basics of Java, Git, Linux and QA Testing
-                            </div>
-                        </div>
-                        <div class="description-item">
-                            <div class="item-marker"><i class="las la-fast-forward"></i></div>
-                            <div class="item-string">Deep learning HTML, CSS, Javascript, React. Building applications
-                                based on
-                                learned tools
-                            </div>
-                        </div>
-                        <div class="description-item">
-                            <div class="item-marker"><i class="las la-fast-forward"></i></div>
-                            <div class="item-string">Freelance activities related to web application development
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2 class="projects-title wow zoomIn">Some Web-Templates I've built</h2>
-            <div class="project-inner">
-
-                <div class="project-item item-left">
-                    <div class="project-img wow slideInRight">
-                        <a href="https://wheelyhog.github.io/Telran_FE_Project/">
-                            <img src="images/temp6.png" alt="template" class="project-template">
-                        </a>
-                    </div>
-                    <div class="project-description wow slideInLeft">
-                        <h4 class="project-subtitle">Featured Project</h4>
-                        <h3 class="project-title">Page layout with special equipment rental services</h3>
-                        <p class="project-text">Layout of a complex layout with numerous sliders, tabs, modals and
-                            visualization
-                            filtering</p>
-                        <div class="project-tools">
-                            <ul class="tools-list">
-                                <li class="tools-item">HTML</li>
-                                <li class="tools-item">CSS</li>
-                                <li class="tools-item">Javascript</li>
-                                <li class="tools-item">Slick</li>
-                                <li class="tools-item">Yandex.map</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a class="project-link" href="https://github.com/WheelyHog/Telran_FE_Project">
-                                <i class="lab la-github"></i></a>
-                            <a class="project-link" href="https://wheelyhog.github.io/Telran_FE_Project/">
-                                <i class="las la-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-item item-right wow slideInUp">
-                    <div class="project-img">
-                        <a href="https://wheelyhog.github.io/Hydro-shop/">
-                            <img src="images/temp1.PNG" alt="template" class="project-template">
-                        </a>
-                    </div>
-                    <div class="project-description">
-                        <h4 class="project-subtitle">Featured Project</h4>
-                        <h3 class="project-title">Online store selling jet skis</h3>
-                        <p class="project-text">Layout of a complex online store with various sliders, tabs and
-                            filtering of
-                            visualisation</p>
-                        <div class="project-tools">
-                            <ul class="tools-list">
-                                <li class="tools-item">HTML</li>
-                                <li class="tools-item">CSS</li>
-                                <li class="tools-item">Javascript</li>
-                                <li class="tools-item">Node.JS</li>
-                                <li class="tools-item">Gulp</li>
-                                <li class="tools-item">Slick</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a class="project-link" href="https://github.com/WheelyHog/Hydro-shop"><i
-                                    class="lab la-github"></i></a>
-                            <a class="project-link" href="https://wheelyhog.github.io/Hydro-shop/"><i
-                                    class="las la-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item item-left">
-                    <div class="project-img wow slideInLeft">
-                        <a href="https://wheelyhog.github.io/Lamba/">
-                            <img src="images/temp2.PNG" alt="template" class="project-template">
-                        </a>
-                    </div>
-                    <div class="project-description wow slideInRight">
-                        <h4 class="project-subtitle">Featured Project</h4>
-                        <h3 class="project-title">News web portal about events in sports car racing.</h3>
-                        <p class="project-text">Layout with non-standard arrangement of elements</p>
-                        <div class="project-tools">
-                            <ul class="tools-list">
-                                <li class="tools-item">HTML</li>
-                                <li class="tools-item">CSS</li>
-                                <li class="tools-item">Javascript</li>
-                                <li class="tools-item">Slick</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a class="project-link" href="https://github.com/WheelyHog/Lamba"><i
-                                    class="lab la-github"></i></a>
-                            <a class="project-link" href="https://wheelyhog.github.io/Lamba/"><i
-                                    class="las la-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item item-right wow slideInUp">
-                    <div class="project-img">
-                        <a href="https://wheelyhog.github.io/Mavic/">
-                            <img src="images/temp3.PNG" alt="template" class="project-template">
-                        </a>
-                    </div>
-                    <div class="project-description">
-                        <h4 class="project-subtitle">Featured Project</h4>
-                        <h3 class="project-title">Landing page for the sale of quadcopters</h3>
-                        <p class="project-text">Simply beautiful and interesting web page with animated section
-                            scrolling</p>
-                        <div class="project-tools">
-                            <ul class="tools-list">
-                                <li class="tools-item">HTML</li>
-                                <li class="tools-item">CSS</li>
-                                <li class="tools-item">Javascript</li>
-                                <li class="tools-item">Node.JS</li>
-                                <li class="tools-item">Gulp</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a class="project-link" href="https://github.com/WheelyHog/Mavic"><i
-                                    class="lab la-github"></i></a>
-                            <a class="project-link" href="https://wheelyhog.github.io/Mavic/"><i
-                                    class="las la-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item item-left wow zoomIn">
-                    <div class="project-img">
-                        <a href="https://wheelyhog.github.io/Hotel/">
-                            <img src="images/temp4.PNG" alt="template" class="project-template">
-                        </a>
-                    </div>
-                    <div class="project-description">
-                        <h4 class="project-subtitle">Featured Project</h4>
-                        <h3 class="project-title">Hotel search and rental web page layout</h3>
-                        <p class="project-text">Demonstration of flex and grid layout, slider and calendar display,
-                            animation</p>
-                        <div class="project-tools">
-                            <ul class="tools-list">
-                                <li class="tools-item">HTML</li>
-                                <li class="tools-item">CSS</li>
-                                <li class="tools-item">Javascript</li>
-                                <li class="tools-item">Slick</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a class="project-link" href="https://github.com/WheelyHog/Hotel"><i
-                                    class="lab la-github"></i></a>
-                            <a class="project-link" href="https://wheelyhog.github.io/Hotel/"><i
-                                    class="las la-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item item-right">
-                    <div class="project-img wow slideInLeft">
-                        <a href="https://wheelyhog.github.io/Leader/">
-                            <img src="images/temp5.png" alt="template" class="project-template">
-                        </a>
-                    </div>
-                    <div class="project-description wow slideInRight">
-                        <h4 class="project-subtitle">Featured Project</h4>
-                        <h3 class="project-title">Web page layout for investors and opening a brokerage account</h3>
-                        <p class="project-text">Application and consolidation of layout skills</p>
-                        <div class="project-tools">
-                            <ul class="tools-list">
-                                <li class="tools-item">HTML</li>
-                                <li class="tools-item">CSS</li>
-                                <li class="tools-item">Javascript</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a class="project-link" href="https://github.com/WheelyHog/Leader"><i
-                                    class="lab la-github"></i></a>
-                            <a class="project-link" href="https://wheelyhog.github.io/Leader/"><i
-                                    class="las la-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item item-left wow zoomIn">
-                    <div class="project-img">
-                        <a href="http://pkti.if.ua/index.php/en/">
-                            <img src="images/temp7.png" alt="template" class="project-template">
-                        </a>
-                    </div>
-                    <div class="project-description">
-                        <h4 class="project-subtitle">Featured Project</h4>
-                        <h3 class="project-title">Website for the sale of woodworking equipment and equipment for the
-                            manufacture
-                            of products for solid fuel boilers</h3>
-                        <p class="project-text">The current site was created on the basis of the Joomla platform in
-                            2010.</p>
-                        <div class="project-tools">
-                            <ul class="tools-list">
-                                <li class="tools-item">HTML</li>
-                                <li class="tools-item">CSS</li>
-                                <li class="tools-item">Javascript</li>
-                                <li class="tools-item">Joomla</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a class="project-link" href="https://github.com/WheelyHog/"><i
-                                    class="lab la-github"></i></a>
-                            <a class="project-link" href="http://pkti.if.ua/index.php/en/"><i
-                                    class="las la-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item item-right">
-                    <div class="project-img wow slideInUp">
-                        <a href="https://3d-figurki.com.pl/pl/">
-                            <img src="images/temp8.png" alt="template" class="project-template">
-                        </a>
-                    </div>
-                    <div class="project-description wow slideInDown">
-                        <h4 class="project-subtitle">Featured Project</h4>
-                        <h3 class="project-title">Online store selling plaster figurines for coloring (children's
-                            toys)</h3>
-                        <p class="project-text">Active site. Developed on the Wordpress platform, the payment system and
-                            the
-                            Woocommerce commercial system are connected</p>
-                        <div class="project-tools">
-                            <ul class="tools-list">
-                                <li class="tools-item">HTML</li>
-                                <li class="tools-item">CSS</li>
-                                <li class="tools-item">Javascript</li>
-                                <li class="tools-item">Wordpress</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a class="project-link" href="https://github.com/WheelyHog/"><i
-                                    class="lab la-github"></i></a>
-                            <a class="project-link" href="https://3d-figurki.com.pl/pl/"><i
-                                    class="las la-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="other">
-        <div class="container">
-            <h2 class="other-title">CSS Features and Some Interesting Solutions</h2>
-            <div class="other-inner">
-
-                <div class="other-item wow slideInLeft">
-                    <a href="https://codepen.io/WheelyHog/pen/wvEVaWV" class="other-link">
-                        <div class="other-top">
-                            <i class="las la-paw"></i>
-                            <a href="https://codepen.io/WheelyHog/pen/wvEVaWV" class="other-link"><i
-                                    class="las la-external-link-alt"></i></a>
-                        </div>
-                        <h3 class="other-title">Magnetic Hover Interaction</h3>
-                        <p class="other-text">Building a social media icon menu with cool hover effect, using HTML, CSS
-                            and
-                            native Javascript</p>
-                        <ul class="other-tools">
-                            <li class="other-tool-item">HTML</li>
-                            <li class="other-tool-item">CSS</li>
-                            <li class="other-tool-item">Javascript</li>
-                        </ul>
-                    </a>
-
-                </div>
-
-                <div class="other-item wow slideInDown">
-                    <a href="https://codepen.io/web-tiki/pen/ZYmZoV" class="other-link">
-                        <div class="other-top">
-                            <i class="las la-paw"></i>
-                            <a href="https://codepen.io/web-tiki/pen/ZYmZoV" class="other-link"><i
-                                    class="las la-external-link-alt"></i></a>
-                        </div>
-                        <h3 class="other-title">CSS radial menu</h3>
-                        <p class="other-text">Building a circle Navigation Menu, without frameworks, using HTML, CSS and
-                            native
-                            Javascript</p>
-                        <ul class="other-tools">
-                            <li class="other-tool-item">HTML</li>
-                            <li class="other-tool-item">CSS</li>
-                            <!--                            <li class="other-tool-item">Javascript</li>-->
-                        </ul>
-                    </a>
-                </div>
-
-                <div class="other-item wow slideInRight">
-                    <a href="https://codepen.io/VisionLine/pen/DQXVbW">
-                        <div class="other-top">
-                            <i class="las la-paw"></i>
-                            <a href="https://codepen.io/VisionLine/pen/DQXVbW" class="other-link"><i
-                                    class="las la-external-link-alt"></i></a>
-                        </div>
-                        <h3 class="other-title">Circular Navigation Popout</h3>
-                        <p class="other-text">Building a circle Navigation Menu, without frameworks, using HTML, CSS and
-                            native
-                            Javascript</p>
-                        <ul class="other-tools">
-                            <li class="other-tool-item">HTML</li>
-                            <li class="other-tool-item">CSS</li>
-                            <li class="other-tool-item">Javascript</li>
-                        </ul>
-                    </a>
-                </div>
-
-                <div class="other-item wow slideInLeft">
-                    <a href="https://codepen.io/fluxus/pen/rweVgp">
-                        <div class="other-top">
-                            <i class="las la-paw"></i>
-                            <a href="https://codepen.io/fluxus/pen/rweVgp" class="other-link"><i
-                                    class="las la-external-link-alt"></i></a>
-                        </div>
-                        <h3 class="other-title">Slider transitions</h3>
-                        <p class="other-text">Building a circle Navigation Menu, without frameworks, using HTML, CSS and
-                            native
-                            Javascript</p>
-                        <ul class="other-tools">
-                            <li class="other-tool-item">HTML</li>
-                            <li class="other-tool-item">CSS</li>
-                            <li class="other-tool-item">Javascript</li>
-                        </ul>
-                    </a>
-                </div>
-
-                <div class="other-item wow slideInUp">
-                    <a href="https://codepen.io/pasaribu/pen/JXrjXK">
-                        <div class="other-top">
-                            <i class="las la-paw"></i>
-                            <a href="https://codepen.io/pasaribu/pen/JXrjXK" class="other-link"><i
-                                    class="las la-external-link-alt"></i></a>
-                        </div>
-                        <h3 class="other-title">CodePen Home
-                            Image Slider with Masking Effect</h3>
-                        <p class="other-text">Building a circle Navigation Menu, without frameworks, using HTML, CSS and
-                            native
-                            Javascript</p>
-                        <ul class="other-tools">
-                            <li class="other-tool-item">HTML</li>
-                            <li class="other-tool-item">CSS</li>
-                            <li class="other-tool-item">Javascript</li>
-                        </ul>
-                    </a>
-
-                </div>
-
-                <div class="other-item wow slideInRight">
-                    <a href="https://codepen.io/zadvorsky/pen/abaeOK">
-                        <div class="other-top">
-                            <i class="las la-paw"></i>
-                            <a href="https://codepen.io/zadvorsky/pen/abaeOK" class="other-link"><i
-                                    class="las la-external-link-alt"></i></a>
-                        </div>
-                        <h3 class="other-title">Shattering Images</h3>
-                        <p class="other-text">Building a circle Navigation Menu, without frameworks, using HTML, CSS and
-                            native
-                            Javascript</p>
-                        <ul class="other-tools">
-                            <li class="other-tool-item">HTML</li>
-                            <li class="other-tool-item">CSS</li>
-                            <li class="other-tool-item">Javascript</li>
-                        </ul>
-                    </a>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <section id="contact">
-        <div class="container">
-            <h2 class="contact-title">What's next?</h2>
-            <h2 class="contact-subtitle">Get In Touch</h2>
-            <p class="contact-text">Now I’m currently looking for any new opportunities and my inbox is always open.
-                Whether you have a
-                question or just want to say hi, I’ll try my best to get back to you!</p>
-            <a class="contact-btn accent-btn" href="mailto:wheelyhog@gmail.com">Say Hello</a>
-        </div>
-    </section>
-
-</main>
-
-<footer id="footer">
-    <div class="container">
-        <div class="bg-menu">
-            <ul class="bg-menu-list">
-                <li class="bg-menu-item"><a href="https://github.com/WheelyHog/"><i class="lab la-github"></i></a></li>
-                <li class="bg-menu-item"><a href="https://www.instagram.com/wheely_hog/"><i
-                        class="lab la-instagram"></i></a>
-                </li>
-                <li class="bg-menu-item"><a href="https://www.facebook.com/serg.grey.50"><i class="lab la-facebook"></i></a>
-                </li>
-                <li class="bg-menu-item"><a href="linkedin.com/in/sergii-gutsuliak-478103264"><i
-                        class="lab la-linkedin"></i></a>
-                </li>
-                <li class="bg-menu-item"><a href="https://codepen.io/WheelyHog"><i class="lab la-codepen"></i></a></li>
-                <li class="bg-menu-item"><a href="mailto: wheelyhog@gmail.com"><i class="las la-at"></i></a></li>
+        <div class="modal">
+            <ul class="mobile_menu_list">
+                <li class="mobile_menu_item"><a href="#about">01. About</a></li>
+                <li class="mobile_menu_item"><a href="#work">02. Experience</a></li>
+                <li class="mobile_menu_item"><a href="#projects">03. Work</a></li>
+                <li class="mobile_menu_item"><a href="#contact">04. Contact</a></li>
+                <li class="mobile_menu_item accent-btn cv-btn"><a href="./docs/cv.pdf">Resume</a></li>
             </ul>
         </div>
-        <div class="footer-inner">
-            <a href="https://github.com/WheelyHog">Designed & Built by Sergii Gutsuliak</a>
-            <a href="#"><img src="./images/hog%20logo.svg" alt="logo-small"></a>
+    </header>
+
+    <main id="fullpage">
+
+        <section class="greeting">
+            <div class="container">
+                <div class="greeting-text-wrapper">
+                    <p class="greeting-text">Hi, my name is</p>
+                </div>
+                <div class="greeting-titles">
+                    <h1 class="greeting-title wow slideInLeft" data-wow-delay="2s" data-wow-duration="1s">Sergii
+                        Gutsuliak.</h1>
+                    <h2 class="greeting-subtitle wow slideInLeft" data-wow-delay="2.5s">I'm a Web Developer</h2>
+                </div>
+                <p class="greeting-description">Hello and welcome to my portfolio! I am a junior front-end developer. I
+                    have
+                    a passion for creating beautiful and functional websites, and I am constantly seeking to improve my
+                    skills and knowledge. Currently, I’m studiing in <a href="https://tel-ran.de/"><img
+                            src="images/telran_logo.png" alt="telran" class="telran"></a></p>
+                <a class="greeting-btn accent-btn" href="#projects">Check out my Experience!</a>
+            </div>
+        </section>
+
+        <section id="about" class="wow slideInUp" data-wow-duration="2s">
+            <div class="container">
+                <h2 class="about-title">About Me</h2>
+                <div class="about-inner">
+                    <div class="about-article">
+                        <p class="about-article-text">In my projects, I strive to create intuitive and user-friendly
+                            interfaces that engage and delight users. I am proficient in HTML, CSS, JavaScript, and
+                            jQuery,
+                            and have experience working with React Javascript library</p>
+                        <p class="about-article-text">As a self-motivated and detail-oriented individual, I am committed
+                            to
+                            delivering high-quality work that meets the needs of my clients. I enjoy collaborating with
+                            others and am always eager to learn from more experienced developers.
+                        </p>
+                        <p class="about-article-text">Please take a look at my portfolio to see some examples of my
+                            work. I
+                            am excited about the opportunity to contribute my skills and creativity to your team and
+                            look
+                            forward to hearing from you.</p>
+                        <p class="about-article-text">Here are a few technologies I’ve been working with recently:</p>
+                        <div class="about-skills">
+                            <div class="l-skills">
+                                <ul>
+                                    <li><i class="lab la-html5"></i> HTML</li>
+                                    <li><i class="lab la-css3"></i> CSS</li>
+                                    <li><i class="lab la-js"></i> Javascript</li>
+                                    <li><i class="las la-database"></i> MySQL</li>
+                                    <li><i class="las la-server"></i> MongoDB</li>
+                                </ul>
+                            </div>
+                            <div class="r-skills">
+                                <ul>
+                                    <li><i class="lab la-joomla"></i> Joomla!</li>
+                                    <li><i class="lab la-wordpress"></i> Wordpress</li>
+                                    <!--                                <li><i class="lab la-node-js"></i> Node.JS</li>-->
+                                    <li><i class="lab la-bootstrap"></i> Bootstrap</li>
+                                    <li><i class="las la-code"></i> jQuery</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avatar">
+                        <div class="avatar-bg">
+                            <img src="./images/oggy_b.png" alt="oggy" id="avatar-img" onmouseover="changeToColor()"
+                                onmouseleave="changeToBlack()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="work" class="wow zoomIn">
+            <div class="container">
+                <h2 class="work-title">Where I’ve Worked</h2>
+                <div class="work-inner">
+                    <div class="work-places">
+                        <div class="work-item work-active">Tel-Ran.de GmbH</div>
+                        <div class="work-item">Varta</div>
+                        <div class="work-item">Xerox</div>
+                        <div class="work-item">Sota</div>
+                    </div>
+                    <div class="work-description">
+                        <h4 class="description-title">Tel-Ran, Student in Frontend Web Developing</h4>
+                        <p class="period">2022 - Present</p>
+                        <div class="description-items">
+                            <div class="description-item">
+                                <div class="item-marker"><i class="las la-fast-forward"></i></div>
+                                <div class="item-string">Learning the basics of Java, Git, Linux and QA Testing
+                                </div>
+                            </div>
+                            <div class="description-item">
+                                <div class="item-marker"><i class="las la-fast-forward"></i></div>
+                                <div class="item-string">Deep learning HTML, CSS, Javascript, React. Building
+                                    applications
+                                    based on
+                                    learned tools
+                                </div>
+                            </div>
+                            <div class="description-item">
+                                <div class="item-marker"><i class="las la-fast-forward"></i></div>
+                                <div class="item-string">Freelance activities related to web application development
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2 class="projects-title wow zoomIn">Some Web-Templates I've built</h2>
+                <div class="project-inner">
+
+                    <div class="project-item item-left">
+                        <div class="project-img wow slideInRight">
+                            <a href="https://wheelyhog.github.io/Telran_FE_Project/">
+                                <img src="images/temp6.png" alt="template" class="project-template">
+                            </a>
+                        </div>
+                        <div class="project-description wow slideInLeft">
+                            <h4 class="project-subtitle">Featured Project</h4>
+                            <h3 class="project-title">Page layout with special equipment rental services</h3>
+                            <p class="project-text">Layout of a complex layout with numerous sliders, tabs, modals and
+                                visualization
+                                filtering</p>
+                            <div class="project-tools">
+                                <ul class="tools-list">
+                                    <li class="tools-item">HTML</li>
+                                    <li class="tools-item">CSS</li>
+                                    <li class="tools-item">Javascript</li>
+                                    <li class="tools-item">Slick</li>
+                                    <li class="tools-item">Yandex.map</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a class="project-link" href="https://github.com/WheelyHog/Telran_FE_Project">
+                                    <i class="lab la-github"></i></a>
+                                <a class="project-link" href="https://wheelyhog.github.io/Telran_FE_Project/">
+                                    <i class="las la-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item item-right wow slideInUp">
+                        <div class="project-img">
+                            <a href="https://wheelyhog.github.io/Hydro-shop/">
+                                <img src="images/temp1.PNG" alt="template" class="project-template">
+                            </a>
+                        </div>
+                        <div class="project-description">
+                            <h4 class="project-subtitle">Featured Project</h4>
+                            <h3 class="project-title">Online store selling jet skis</h3>
+                            <p class="project-text">Layout of a complex online store with various sliders, tabs and
+                                filtering of
+                                visualisation</p>
+                            <div class="project-tools">
+                                <ul class="tools-list">
+                                    <li class="tools-item">HTML</li>
+                                    <li class="tools-item">CSS</li>
+                                    <li class="tools-item">Javascript</li>
+                                    <li class="tools-item">Node.JS</li>
+                                    <li class="tools-item">Gulp</li>
+                                    <li class="tools-item">Slick</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a class="project-link" href="https://github.com/WheelyHog/Hydro-shop"><i
+                                        class="lab la-github"></i></a>
+                                <a class="project-link" href="https://wheelyhog.github.io/Hydro-shop/"><i
+                                        class="las la-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item item-left">
+                        <div class="project-img wow slideInLeft">
+                            <a href="https://wheelyhog.github.io/Lamba/">
+                                <img src="images/temp2.PNG" alt="template" class="project-template">
+                            </a>
+                        </div>
+                        <div class="project-description wow slideInRight">
+                            <h4 class="project-subtitle">Featured Project</h4>
+                            <h3 class="project-title">News web portal about events in sports car racing.</h3>
+                            <p class="project-text">Layout with non-standard arrangement of elements</p>
+                            <div class="project-tools">
+                                <ul class="tools-list">
+                                    <li class="tools-item">HTML</li>
+                                    <li class="tools-item">CSS</li>
+                                    <li class="tools-item">Javascript</li>
+                                    <li class="tools-item">Slick</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a class="project-link" href="https://github.com/WheelyHog/Lamba"><i
+                                        class="lab la-github"></i></a>
+                                <a class="project-link" href="https://wheelyhog.github.io/Lamba/"><i
+                                        class="las la-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item item-right wow slideInUp">
+                        <div class="project-img">
+                            <a href="https://wheelyhog.github.io/Mavic/">
+                                <img src="images/temp3.PNG" alt="template" class="project-template">
+                            </a>
+                        </div>
+                        <div class="project-description">
+                            <h4 class="project-subtitle">Featured Project</h4>
+                            <h3 class="project-title">Landing page for the sale of quadcopters</h3>
+                            <p class="project-text">Simply beautiful and interesting web page with animated section
+                                scrolling</p>
+                            <div class="project-tools">
+                                <ul class="tools-list">
+                                    <li class="tools-item">HTML</li>
+                                    <li class="tools-item">CSS</li>
+                                    <li class="tools-item">Javascript</li>
+                                    <li class="tools-item">Node.JS</li>
+                                    <li class="tools-item">Gulp</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a class="project-link" href="https://github.com/WheelyHog/Mavic"><i
+                                        class="lab la-github"></i></a>
+                                <a class="project-link" href="https://wheelyhog.github.io/Mavic/"><i
+                                        class="las la-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item item-left wow zoomIn">
+                        <div class="project-img">
+                            <a href="https://wheelyhog.github.io/Hotel/">
+                                <img src="images/temp4.PNG" alt="template" class="project-template">
+                            </a>
+                        </div>
+                        <div class="project-description">
+                            <h4 class="project-subtitle">Featured Project</h4>
+                            <h3 class="project-title">Hotel search and rental web page layout</h3>
+                            <p class="project-text">Demonstration of flex and grid layout, slider and calendar display,
+                                animation</p>
+                            <div class="project-tools">
+                                <ul class="tools-list">
+                                    <li class="tools-item">HTML</li>
+                                    <li class="tools-item">CSS</li>
+                                    <li class="tools-item">Javascript</li>
+                                    <li class="tools-item">Slick</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a class="project-link" href="https://github.com/WheelyHog/Hotel"><i
+                                        class="lab la-github"></i></a>
+                                <a class="project-link" href="https://wheelyhog.github.io/Hotel/"><i
+                                        class="las la-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item item-right">
+                        <div class="project-img wow slideInLeft">
+                            <a href="https://wheelyhog.github.io/Leader/">
+                                <img src="images/temp5.png" alt="template" class="project-template">
+                            </a>
+                        </div>
+                        <div class="project-description wow slideInRight">
+                            <h4 class="project-subtitle">Featured Project</h4>
+                            <h3 class="project-title">Web page layout for investors and opening a brokerage account</h3>
+                            <p class="project-text">Application and consolidation of layout skills</p>
+                            <div class="project-tools">
+                                <ul class="tools-list">
+                                    <li class="tools-item">HTML</li>
+                                    <li class="tools-item">CSS</li>
+                                    <li class="tools-item">Javascript</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a class="project-link" href="https://github.com/WheelyHog/Leader"><i
+                                        class="lab la-github"></i></a>
+                                <a class="project-link" href="https://wheelyhog.github.io/Leader/"><i
+                                        class="las la-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item item-left wow zoomIn">
+                        <div class="project-img">
+                            <a href="http://pkti.if.ua/index.php/en/">
+                                <img src="images/temp7.png" alt="template" class="project-template">
+                            </a>
+                        </div>
+                        <div class="project-description">
+                            <h4 class="project-subtitle">Featured Project</h4>
+                            <h3 class="project-title">Website for the sale of woodworking equipment and equipment for
+                                the
+                                manufacture
+                                of products for solid fuel boilers</h3>
+                            <p class="project-text">The current site was created on the basis of the Joomla platform in
+                                2010.</p>
+                            <div class="project-tools">
+                                <ul class="tools-list">
+                                    <li class="tools-item">HTML</li>
+                                    <li class="tools-item">CSS</li>
+                                    <li class="tools-item">Javascript</li>
+                                    <li class="tools-item">Joomla</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a class="project-link" href="https://github.com/WheelyHog/"><i
+                                        class="lab la-github"></i></a>
+                                <a class="project-link" href="http://pkti.if.ua/index.php/en/"><i
+                                        class="las la-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item item-right">
+                        <div class="project-img wow slideInUp">
+                            <a href="https://3d-figurki.com.pl/pl/">
+                                <img src="images/temp8.png" alt="template" class="project-template">
+                            </a>
+                        </div>
+                        <div class="project-description wow slideInDown">
+                            <h4 class="project-subtitle">Featured Project</h4>
+                            <h3 class="project-title">Online store selling plaster figurines for coloring (children's
+                                toys)</h3>
+                            <p class="project-text">Active site. Developed on the Wordpress platform, the payment system
+                                and
+                                the
+                                Woocommerce commercial system are connected</p>
+                            <div class="project-tools">
+                                <ul class="tools-list">
+                                    <li class="tools-item">HTML</li>
+                                    <li class="tools-item">CSS</li>
+                                    <li class="tools-item">Javascript</li>
+                                    <li class="tools-item">Wordpress</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a class="project-link" href="https://github.com/WheelyHog/"><i
+                                        class="lab la-github"></i></a>
+                                <a class="project-link" href="https://3d-figurki.com.pl/pl/"><i
+                                        class="las la-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="other">
+            <div class="container">
+                <h2 class="other-title">CSS Features and Some Interesting Solutions</h2>
+                <div class="other-inner">
+
+                    <div class="other-item wow slideInLeft">
+                        <a href="https://codepen.io/WheelyHog/pen/wvEVaWV" class="other-link">
+                            <div class="other-top">
+                                <i class="las la-paw"></i>
+                                <a href="https://codepen.io/WheelyHog/pen/wvEVaWV" class="other-link"><i
+                                        class="las la-external-link-alt"></i></a>
+                            </div>
+                            <h3 class="other-title">Magnetic Hover Interaction</h3>
+                            <p class="other-text">Building a social media icon menu with cool hover effect, using HTML,
+                                CSS
+                                and
+                                native Javascript</p>
+                            <ul class="other-tools">
+                                <li class="other-tool-item">HTML</li>
+                                <li class="other-tool-item">CSS</li>
+                                <li class="other-tool-item">Javascript</li>
+                            </ul>
+                        </a>
+
+                    </div>
+
+                    <div class="other-item wow slideInDown">
+                        <a href="https://codepen.io/web-tiki/pen/ZYmZoV" class="other-link">
+                            <div class="other-top">
+                                <i class="las la-paw"></i>
+                                <a href="https://codepen.io/web-tiki/pen/ZYmZoV" class="other-link"><i
+                                        class="las la-external-link-alt"></i></a>
+                            </div>
+                            <h3 class="other-title">CSS radial menu</h3>
+                            <p class="other-text">Building a circle Navigation Menu, without frameworks, using HTML, CSS
+                                and
+                                native
+                                Javascript</p>
+                            <ul class="other-tools">
+                                <li class="other-tool-item">HTML</li>
+                                <li class="other-tool-item">CSS</li>
+                                <!--                            <li class="other-tool-item">Javascript</li>-->
+                            </ul>
+                        </a>
+                    </div>
+
+                    <div class="other-item wow slideInRight">
+                        <a href="https://codepen.io/VisionLine/pen/DQXVbW">
+                            <div class="other-top">
+                                <i class="las la-paw"></i>
+                                <a href="https://codepen.io/VisionLine/pen/DQXVbW" class="other-link"><i
+                                        class="las la-external-link-alt"></i></a>
+                            </div>
+                            <h3 class="other-title">Circular Navigation Popout</h3>
+                            <p class="other-text">Building a circle Navigation Menu, without frameworks, using HTML, CSS
+                                and
+                                native
+                                Javascript</p>
+                            <ul class="other-tools">
+                                <li class="other-tool-item">HTML</li>
+                                <li class="other-tool-item">CSS</li>
+                                <li class="other-tool-item">Javascript</li>
+                            </ul>
+                        </a>
+                    </div>
+
+                    <div class="other-item wow slideInLeft">
+                        <a href="https://codepen.io/fluxus/pen/rweVgp">
+                            <div class="other-top">
+                                <i class="las la-paw"></i>
+                                <a href="https://codepen.io/fluxus/pen/rweVgp" class="other-link"><i
+                                        class="las la-external-link-alt"></i></a>
+                            </div>
+                            <h3 class="other-title">Slider transitions</h3>
+                            <p class="other-text">Building a circle Navigation Menu, without frameworks, using HTML, CSS
+                                and
+                                native
+                                Javascript</p>
+                            <ul class="other-tools">
+                                <li class="other-tool-item">HTML</li>
+                                <li class="other-tool-item">CSS</li>
+                                <li class="other-tool-item">Javascript</li>
+                            </ul>
+                        </a>
+                    </div>
+
+                    <div class="other-item wow slideInUp">
+                        <a href="https://codepen.io/pasaribu/pen/JXrjXK">
+                            <div class="other-top">
+                                <i class="las la-paw"></i>
+                                <a href="https://codepen.io/pasaribu/pen/JXrjXK" class="other-link"><i
+                                        class="las la-external-link-alt"></i></a>
+                            </div>
+                            <h3 class="other-title">CodePen Home
+                                Image Slider with Masking Effect</h3>
+                            <p class="other-text">Building a circle Navigation Menu, without frameworks, using HTML, CSS
+                                and
+                                native
+                                Javascript</p>
+                            <ul class="other-tools">
+                                <li class="other-tool-item">HTML</li>
+                                <li class="other-tool-item">CSS</li>
+                                <li class="other-tool-item">Javascript</li>
+                            </ul>
+                        </a>
+
+                    </div>
+
+                    <div class="other-item wow slideInRight">
+                        <a href="https://codepen.io/zadvorsky/pen/abaeOK">
+                            <div class="other-top">
+                                <i class="las la-paw"></i>
+                                <a href="https://codepen.io/zadvorsky/pen/abaeOK" class="other-link"><i
+                                        class="las la-external-link-alt"></i></a>
+                            </div>
+                            <h3 class="other-title">Shattering Images</h3>
+                            <p class="other-text">Building a circle Navigation Menu, without frameworks, using HTML, CSS
+                                and
+                                native
+                                Javascript</p>
+                            <ul class="other-tools">
+                                <li class="other-tool-item">HTML</li>
+                                <li class="other-tool-item">CSS</li>
+                                <li class="other-tool-item">Javascript</li>
+                            </ul>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="contact-title">What's next?</h2>
+                <h2 class="contact-subtitle">Get In Touch</h2>
+                <p class="contact-text">Now I’m currently looking for any new opportunities and my inbox is always open.
+                    Whether you have a
+                    question or just want to say hi, I’ll try my best to get back to you!</p>
+                <a class="contact-btn accent-btn" href="mailto:wheelyhog@gmail.com">Say Hello</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="bg-menu">
+                <ul class="bg-menu-list">
+                    <li class="bg-menu-item"><a href="https://github.com/WheelyHog/"><i class="lab la-github"></i></a>
+                    </li>
+                    <li class="bg-menu-item"><a href="https://www.instagram.com/wheely_hog/"><i
+                                class="lab la-instagram"></i></a>
+                    </li>
+                    <li class="bg-menu-item"><a href="https://www.facebook.com/serg.grey.50"><i
+                                class="lab la-facebook"></i></a>
+                    </li>
+                    <li class="bg-menu-item"><a href="linkedin.com/in/sergii-gutsuliak-478103264"><i
+                                class="lab la-linkedin"></i></a>
+                    </li>
+                    <li class="bg-menu-item"><a href="https://codepen.io/WheelyHog"><i class="lab la-codepen"></i></a>
+                    </li>
+                    <li class="bg-menu-item"><a href="mailto: wheelyhog@gmail.com"><i class="las la-at"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-inner">
+                <a href="https://github.com/WheelyHog">Designed & Built by Sergii Gutsuliak</a>
+                <a href="#"><img src="./images/hog%20logo.svg" alt="logo-small"></a>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-
-<script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.19/fullpage.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
